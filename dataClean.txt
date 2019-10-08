@@ -1,0 +1,12 @@
+0         False
+1         False
+2         False
+3         False
+4         False
+          ...  
+111988    False
+111989    False
+111990    False
+111991    False
+111992    False
+Name: Year of Record, Length: 111993, dtype: bool
