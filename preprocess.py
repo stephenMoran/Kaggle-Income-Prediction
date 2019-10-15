@@ -34,13 +34,6 @@ def encode(train,test, encoder):
     train['train'] = 1
     test['train'] = 0
 
-    """
-    print(len(train))
-    q = train["Income in EUR"].quantile(0.99)
-    train = train[train["Income in EUR"] < q]
-    print(len(train))
-    """
-
     combined = pd.concat([train,test])
 
     pd.set_option('display.float_format', '{:.2f}'.format)

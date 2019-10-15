@@ -42,6 +42,7 @@ predData = pp.cleanData(predData)
 encoder = preprocessing.LabelEncoder()
 #dataset = pp.removeOutliers(dataset)
 dataset, predData = pp.encode(dataset,predData, encoder)
+
 #SPLITTING
 train, test = train_test_split(dataset, test_size=0.2, random_state=42)
 
