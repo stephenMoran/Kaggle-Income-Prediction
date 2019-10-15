@@ -27,3 +27,10 @@ def showScore(y, y_pred):
     print('linear training score ')
     print(score)
     print(rmse)
+
+def corr(f1, f2):
+    dataset.plot(x=f1, y=f2, style='o')
+    plt.title(f1p + ' vs ' + f2)
+    plt.xlabel(f1)
+    plt.ylabel(f2)
+    plt.show()
