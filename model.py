@@ -38,12 +38,6 @@ pd.set_option('display.max_columns', None)
 #Clean and encode varibales
 dataset = pp.cleanData(dataset)
 
-"""
-sns.boxplot(x=dataset['Age'])
-plt.show()
-"""
-
-
 predData = pp.cleanData(predData)
 encoder = preprocessing.LabelEncoder()
 #dataset = pp.removeOutliers(dataset)
@@ -58,8 +52,6 @@ X_train = train[cols]
 
 cols = [col for col in test.columns if col not in ['Instance','Income in EUR']]
 X_test = test[cols]
-
-
 
 
 #SCALING
@@ -79,7 +71,7 @@ def linear():
     return model
 
 def gradBoost():
-    model = xgb.XGBRegressor(objective="reg:squarederror", random_state=42, n_estimators = 900, max_depth = 5, gamma = 5, colsample_bytree = 0.6)
+    model = xgb.XGBRegressor(objective="reg:squarederror", random_state=42, n_estimators = 900, max_depth = 5, gamma = 5, colsample_bytree = 0.7)
     return model
 #instantiate
 regressor =  gradBoost()
@@ -103,7 +95,6 @@ cols = [col for col in predData.columns if col not in ['Instance','Income']]
 predData = predData[cols]
 
 #SCALING
-print(predData.shape)
 predData = scaler.fit_transform(predData)
 
 
