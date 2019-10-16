@@ -9,7 +9,7 @@ The code is split into the following files
 
 ## Methedology
 
-the program follows the sequence of: 
+The program follows the sequence of: 
   - Load data 
   - Clean data 
   - Encode data 
