@@ -28,18 +28,18 @@ The program follows the sequence of:
   
 ## Encoding values and Scaling
 #### Encoding 
-Two different methiods of encoding were used for categorical features: 
+Two different methods of encoding were used for categorical features: 
   - One-hot encoding: used for 'Gender', 'Hair Color' and 'University Degree'
   - Target encoding: used for 'Country' and 'Profession'
 Found one-hot encoding unsuitable for Country and Profession, where there were a large number of labels 
 
-To acccount for the fact that values would appear in the competition data that were not in the training data. The encoding fucntion takes both datasets as parametres and encodes everything before splitting the data back into training and competition data
+To account for the fact that values would appear in the competition data that were not in the training data. The encoding function takes both datasets as parameters and encodes everything before splitting the data back into training and competition data
 
 #### Scaling 
 Standard sclaer was used to fit all the data 
 
 ## Outliers
-Through visualisation I noticed noise and outliers in the data. However, I found that only altering 'Bodyt Height[cm]' gave a performace enchancement
+Through visualisation I noticed noise and outliers in the data. However, I found that only removing outliers for 'Body Height[cm]' gave a performace enchancement
 
 I removed everyting outside the 0.99 quantile 
 
