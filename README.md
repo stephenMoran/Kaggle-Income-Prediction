@@ -7,7 +7,7 @@ The code is split into the following files
 - **preprocess.py** : This file deals with missing values, encoding and outlier removal
 - **visualise.py** : Here various visualisation techniques are defined and can be used to make sense of the data 
 
-## Methedology
+## Methodology
 
 The program follows the sequence of: 
   - Load data 
